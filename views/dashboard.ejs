@@ -1,0 +1,19 @@
+<%- include('partials/header', { title: "Dashboard" }) %>
+<style>
+    a {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #005fbe;
+        color: white;
+        text-decoration: none;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+    
+      a:hover {
+        background-color: #427af5;
+      }
+</style>
+<h1>Welcome, <%= username %></h1>
+<a href="/logout">Logout</a>
+<%- include('partials/footer') %>
